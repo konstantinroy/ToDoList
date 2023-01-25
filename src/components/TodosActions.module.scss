@@ -1,0 +1,20 @@
+.refreshIcon {
+    transition: 2s easy;
+    animation: rotateDeleteBtn 16s infinite;
+}
+
+.refreshIcon:hover {
+    animation: rotateDeleteBtn 8s infinite;
+}
+
+@keyframes rotateDeleteBtn {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

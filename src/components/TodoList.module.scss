@@ -1,0 +1,46 @@
+@import "../index.scss";
+
+.todoList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px auto;
+  height: auto;
+  max-height: 400px;
+  width: 50%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(12, 12, 12);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 202);
+}
+
+@media only screen and (max-width: 810px) {
+  .todoList {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .todoList {
+    max-height: 470px;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .todoList {
+    width: 90%;
+  }
+}

@@ -1,0 +1,169 @@
+@import "../index.scss";
+
+.todoBlock {
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  color: #fff;
+  text-shadow: 0px 0px 3px #000;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 90%;
+  border: 1px solid #686868;
+  border-radius: 6px;
+  margin: 0.5vw 0;
+  padding: 15px 15px;
+  animation: animationTodoBlock 1s ease;
+}
+
+.completedTodo {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid gray;
+  text-shadow: unset;
+  color: gray;
+}
+
+.todoBlock svg {
+  height: 25px;
+  width: 25px;
+  margin: 0 5px;
+}
+
+.todoIcon {
+  color: #28282B;
+}
+
+.todoBox {
+  display: flex;
+  align-items: unset;
+  justify-self: center;
+}
+
+.textBlock {
+  width: 34vw;
+  text-align: start;
+  font-size: 20px;
+  margin-left: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.visTextBlock {
+  width: 85%;
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+.todoBox button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+  display: contents;
+}
+
+.deleteIcon,
+.checkIcon,
+.XIcon {
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: #ff0000b3;
+}
+
+.checkIcon {
+  color: rgba(0, 128, 0, 0.726);
+}
+
+.completedTodo svg {
+  color: gray;
+}
+
+.todoBlock.completed svg:hover {
+  color: gray;
+}
+
+@keyframes animationTodoBlock {
+  0% {
+    box-shadow: 0px 0px 20px $pinkColor;
+  }
+  100% {
+    box-shadow: unset;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .textBlock {
+    width: 33vw;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .textBlock {
+    width: 43vw;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+  .todoBlock svg {
+    height: 23px;
+    width: 23px;
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .textBlock {
+    width: 49vw;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+  .todoBlock svg {
+    height: 21px;
+    width: 21px;
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .todoBlock {
+    width: 85%;
+    padding: 8px 10px;
+    margin: 7px 0;
+  }
+  .textBlock {
+    width: 53vw;
+  }
+  .visTextBlock {
+    width: 100%;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .textBlock {
+    width: 49vw;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .textBlock {
+    width: 44vw;
+    font-size: 15px;
+  }
+  .visTextBlock {
+    width: 85%;
+  }
+  .todoBlock {
+    padding: 12px 10px;
+}
+}
