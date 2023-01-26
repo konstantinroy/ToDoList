@@ -1,18 +1,19 @@
 @import "../index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .todoBlock {
-  background-color: rgba(255, 255, 255, 0.3019607843);
-  color: #fff;
-  text-shadow: 0px 0px 3px #000;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 9% 71% 20%;
+  align-items: center;
   width: 90%;
+  background-color: #ff82ba;
+  color: #322b2b;
+  text-shadow: 0px 0px 0px #000;
   border: 1px solid #686868;
   border-radius: 6px;
   margin: 0.5vw 0;
   padding: 15px 15px;
-  animation: animationTodoBlock 1s ease;
+  animation: Todo_animationTodoBlock__KXCYM 1s ease;
 }
 
 .completedTodo {
@@ -22,34 +23,47 @@
   color: gray;
 }
 
+.watchTodo {
+  grid-template-columns: auto;
+  padding: 15px 15px;
+}
+
 .todoBlock svg {
-  height: 25px;
-  width: 25px;
-  margin: 0 5px;
+  font-size: 25px;
 }
 
 .todoIcon {
-  color: #28282B;
+  color: #28282b;
 }
 
 .todoBox {
   display: flex;
-  align-items: unset;
-  justify-self: center;
+  align-items: center;
+  justify-content: start;
+}
+
+.todoBoxIcons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.todoBoxIcons svg {
+  margin: 0 5px;
 }
 
 .textBlock {
-  width: 34vw;
   text-align: start;
   font-size: 20px;
-  margin-left: 5px;
+  font-family: "Pacifico", cursive;
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
 }
 
 .visTextBlock {
-  width: 85%;
+  width: 100%;
+  margin: 5px 15px;
   white-space: break-spaces;
   word-break: break-all;
 }
@@ -93,39 +107,23 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .textBlock {
-    width: 33vw;
-  }
   .visTextBlock {
-    width: 85%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 810px) {
-  .textBlock {
-    width: 43vw;
-  }
   .visTextBlock {
-    width: 85%;
+    width: 100%;
   }
-  .todoBlock svg {
-    height: 23px;
-    width: 23px;
+  .todoBoxIcons svg {
     margin: 0 5px;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .textBlock {
-    width: 49vw;
-  }
   .visTextBlock {
-    width: 85%;
-  }
-  .todoBlock svg {
-    height: 21px;
-    width: 21px;
-    margin: 0 5px;
+    width: 100%;
   }
 }
 
@@ -135,35 +133,25 @@
     padding: 8px 10px;
     margin: 7px 0;
   }
+  .todoBlock svg {
+    font-size: 20px;
+  }
   .textBlock {
-    width: 53vw;
+    font-size: 18px;
   }
   .visTextBlock {
     width: 100%;
   }
-  .visTextBlock {
-    width: 85%;
-  }
 }
 
 @media only screen and (max-width: 414px) {
-  .textBlock {
-    width: 49vw;
-  }
-  .visTextBlock {
-    width: 85%;
-  }
 }
 
 @media only screen and (max-width: 360px) {
-  .textBlock {
-    width: 44vw;
-    font-size: 15px;
-  }
   .visTextBlock {
-    width: 85%;
+    width: 100%;
   }
   .todoBlock {
     padding: 12px 10px;
-}
+  }
 }
