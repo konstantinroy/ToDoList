@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/konstantinroy/ToDoList.git/static/css/main.e7151ca0.css",
+    "main.css": "/konstantinroy/ToDoList.git/static/css/main.a9b6ca9d.css",
     "main.js": "/konstantinroy/ToDoList.git/static/js/main.9e0ec2c8.js",
     "index.html": "/konstantinroy/ToDoList.git/index.html",
-    "main.e7151ca0.css.map": "/konstantinroy/ToDoList.git/static/css/main.e7151ca0.css.map",
+    "main.a9b6ca9d.css.map": "/konstantinroy/ToDoList.git/static/css/main.a9b6ca9d.css.map",
     "main.9e0ec2c8.js.map": "/konstantinroy/ToDoList.git/static/js/main.9e0ec2c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7151ca0.css",
+    "static/css/main.a9b6ca9d.css",
     "static/js/main.9e0ec2c8.js"
   ]
 }
