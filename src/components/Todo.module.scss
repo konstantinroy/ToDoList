@@ -39,13 +39,13 @@
 .todoBox {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .todoBoxIcons {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .todoBoxIcons svg {
